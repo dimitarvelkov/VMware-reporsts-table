@@ -1,0 +1,101 @@
+body{
+    padding: 0;
+}
+
+#table-view{
+    width: 700px;
+    margin: 20px auto 20px auto ;
+}
+
+#table-group-format{
+    display: inline-block;
+}
+
+#table-group-format select{
+    height: 27px;
+    margin: 0;
+}
+
+#table-settings{
+    background-color:#ECEBED ;
+    padding: 7px;
+    display: block;
+    border: 1px solid #c0c0c0;
+    float: right;
+    display: none;
+}
+
+#table-settings input{
+    cursor:pointer;
+}
+
+#table-settings-show {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    background-color: #ECEBED;
+    padding: 4px;
+    border: 1px solid #c0c0c0;
+    cursor:pointer;
+}
+
+thead th{
+    padding:10px;
+    cursor:pointer;
+}
+
+table{
+    max-width: 1000px;
+    border-collapse:collapse;
+}
+
+tfoot #absencesSum,#gradeSum {
+    padding:5px;
+    background-color: rgba(0, 0, 0, 0.16);
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #B3B3B3  !important;
+}
+
+tfoot td{
+    border: 0 !important;
+}
+
+table td{
+    border: 1px solid #DCDCDC;
+}
+
+.grade{
+    text-align: center;
+}
+
+.absence{
+    text-align: center;
+}
+
+.date-col{
+    text-align: center;
+    min-width: 130px;
+}
+
+.class-col{
+    min-width: 120px;
+}
+
+.name-col{
+    min-width: 120px;
+}
+
+.absence-col {
+    min-width: 100px;
+    text-align: center;
+}
+
+.grade-col {
+    min-width: 100px;
+    text-align: center;
+}
+
+.num-col{
+    width: 45px;
+    text-align: center;
+}

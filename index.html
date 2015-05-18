@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>VMware report table</title>
+    <link rel="stylesheet" href="styles/app/app.css"/>
+</head>
+<body>
+<div id="container">
+    <div id="table-view">
+
+        <form  id="table-group-format">
+            <select>
+                <option value="tableBaseFormat" selected>Base table format</option>
+                <option value="tableGroupByName" >Group by name</option>
+                <option value="tableGroupByClass" >Group  by class</option>
+                <option value="tableGroupByDate" >Group by date</option>
+            </select>
+            <div id="table-settings-show">settings</div>
+            <div id ="table-settings">
+            <input id="numeration-hide-show" type="checkbox" checked>Numeration<br>
+            <input id="name-hide-show" type="checkbox" checked>Name<br>
+            <input id="class-hide-show" type="checkbox" checked>Class<br>
+            <input id="date-hide-show" type="checkbox" checked>CompletedOn<br>
+            <input id="absence-hide-show" type="checkbox" checked>Absence<br>
+            <input id="grade-hide-show" type="checkbox" checked>Grade
+            </div>
+        </form>
+
+        <table id="report">
+            <thead>
+            <tr id="thead" >
+                <th class="num-col">№</th>
+                <th class="name-col">Name
+                    <img class="order-up-triangle" src="images/triangleUp.png" />
+                    <img class="order-down-triangle" src="images/triangleDown.png" />
+                </th>
+                <th class="class-col">Class
+                    <img class="order-up-triangle" src="images/triangleUp.png" />
+                    <img class="order-down-triangle" src="images/triangleDown.png"/>
+                </th>
+                <th class="date-col">CompletedOn
+                    <img class="order-up-triangle" src="images/triangleUp.png" />
+                    <img class="order-down-triangle" src="images/triangleDown.png" />
+                </th>
+                <th class="absence-col">Absence
+                    <img class="order-up-triangle" src="images/triangleUp.png" />
+                    <img class="order-down-triangle" src="images/triangleDown.png" />
+                </th>
+                <th class="grade-col">Grade
+                    <img class="order-up-triangle" src="images/triangleUp.png" />
+                    <img class="order-down-triangle" src="images/triangleDown.png" />
+                </th>
+            </tr>
+            </thead>
+            <tfoot>
+            <tr>
+                <td class="num-col"></td>
+                <td class="name-col"></td>
+                <td class="class-col"></td>
+                <td class="date-col"></td>
+                <td class="absence-col" id="absencesSum"></td>
+                <td class="grade-col" id="gradeSum"></td>
+            </tr>
+            </tfoot>
+            <tbody id="table-body">
+            </tbody>
+        </table>
+
+    </div>
+</div>
+
+<script src="lib/jquery/jquery-2.1.3.js"></script>
+<script src="js/models/ReportEntity.js"></script>
+<script src="js/requester/AjaxRequester.js"></script>
+<script src="js/Controllers/AppController.js"></script>
+
+</body>
+</html>
